@@ -21,4 +21,6 @@ EJS stands for Embeded JavaScript. It's a templating script to generate dynamic 
   <% }) %> 
 ```
 
-![EJS doc](ejs.png)
+<div style="width: 100%; text-align: center;">
+  <img src="ejs.png">
+</div>
