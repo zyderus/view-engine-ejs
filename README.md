@@ -42,8 +42,8 @@ Layout is not native to EJS, however it is easy to setup by installing package *
     app.get('/layout-about', (req, res) => res.render('about-insert'));
 ```
 
-- in view directory make a layout file. It'll be a **wrapper**
-- place **<%- body %>** tag *(inserts rendered here)*
+- in **views** directory make a layout file. It'll be a **wrapper**
+- place **<%- body %>** tag *(where inserts rendere)*
 ```sh
     <!DOCTYPE html>
     <html>
@@ -70,8 +70,8 @@ about-insert.ejs
 ```sh
     <div>
       <h1>About page</h1>
-      <a href="layout">Index</a>
+      <a href="/layout">Index</a>
     </div>
 ```
 ##### Layout path
-Once layouts activated, every route will load layout.ejs and res.render page into <%- body %> section. Test layout route here *localhost:3000/layout*
+Once **layout** initialized, every route will load **layout.ejs** and render page into <%- body %> section. Test layout route here *localhost:3000/layout*
