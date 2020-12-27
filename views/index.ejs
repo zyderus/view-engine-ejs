@@ -1,0 +1,32 @@
+<!-- Attach html file -->
+<%- include('partials/header') %>
+
+<small>index.ejs</small>
+<h1>Welcome to EJS Page</h1>
+
+<h3>Animals</h3>
+
+<ul>
+  <!-- Loop through an array -->
+  <% list.forEach(item => { %>
+    <li><%= item.type %>: <%= item.animal %></li>
+  <% }) %> 
+</ul>
+
+<h3>ID</h3>
+
+<!-- If / Else statement -->
+<% if(person) { %>
+  <ul>
+    <li><%= person.name %></li>
+  </ul>
+<% } else { %>
+  <span>no data</span>
+<% } %>
+
+<h3>List</h3>
+<ul>
+  <%- include('partials/list') %>
+</ul>
+
+<%- include('partials/footer') %>
